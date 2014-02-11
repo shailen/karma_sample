@@ -1,0 +1,7 @@
+name: karma_sample
+description: A sample command-line application
+dependencies:
+  angular: 0.9.5
+  browser: any
+  unittest: any
+  js: any
