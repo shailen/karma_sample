@@ -11,7 +11,12 @@ import 'dart:mirrors';
 import 'package:angular/angular.dart';
 import 'my_controller.dart' show MyController;
 
+class MyModule extends Module {
+  MyModule() {
+    type(MyController);
+  }
+}
+
 main() {
-  ngBootstrap(module: new Module()
-      ..type(MyController));
+  ngBootstrap(module: new MyModule());
 }
